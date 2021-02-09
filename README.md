@@ -1,9 +1,9 @@
 ## This project was created by create-react-app, and the backend was created with JSON-server.
 
-## Available scripts - *npm must be installed first*
+### Available scripts - *npm must be installed first*
 
-### For setup, This command will install all modules listed as dependencies in project. Open project directory and type: *npm install*
-### The following script runs both the frontend and backend servers *concurrently*:  &nbsp; *npm run dev* 
+### 1- For setup, This command will install all modules listed as dependencies in project. Open project directory and type: *npm install*
+### 2- The following script runs both the frontend and backend servers *concurrently*:  &nbsp; *npm run dev* 
 
 ### Please note the following:
 
