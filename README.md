@@ -1,5 +1,5 @@
 
-## Available scripts *npm must be installed first*
+## Available scripts - *npm must be installed first*
 
 ### For setup, This command will install all modules listed as dependencies in project. Open project directory and type: *npm install*
 ### The following script runs both the frontend and backend servers *concurrently*:  &nbsp; *npm run dev* 
