@@ -1,3 +1,4 @@
+## This project was created by create-react-app, and the backend was created with JSON-server.
 
 ## Available scripts - *npm must be installed first*
 
