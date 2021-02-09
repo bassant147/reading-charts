@@ -6,7 +6,7 @@
 
 ### Please note the following:
 
-****
+---
 
 1- Bug Alert:  There is an undesired behavior whenever the user selects owned posts over time, it is an issue with id that I will solve and commit later but I wanted to commit the code before changing the logic. The other two charts are working as expected. *I am planning to work on this bug tomorrow*
 
