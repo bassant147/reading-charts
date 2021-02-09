@@ -1,25 +1,34 @@
-import logo from './logo.svg';
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Button from './components/Button';
+import Menu from './components/Menu';
+import Chart from './components/Chart';
+
+import {fetchData} from './actions';
+
+class App extends Component { 
+  componentDidMount() {
+    this.props.fetchData();
+  }
+
+  render() {
+    return (
+      <div className="container">
+          <h2 className="heading box--1">Internal dashboard</h2>
+          <Button />
+          {this.props.menuVisible && <Menu />}
+          <Chart/>
+      </div>
+    );
+  }    
 }
 
-export default App;
+const mapStateToProps = state => {
+  return {
+    menuVisible: state.display.menuVisible
+  }
+}
+
+export default connect(mapStateToProps, {fetchData})(App);

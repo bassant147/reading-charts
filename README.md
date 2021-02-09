@@ -1,3 +1,5 @@
+# Redux overkill on a small project like this one.however i had in mind scalability and i am going to be working on large projects so i had to showcase my redux skills
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
