@@ -8,6 +8,7 @@
 #### &nbsp; &nbsp; &nbsp; *npm run dev* 
 #### 3- For testing, *make sure both the frontend and backend servers are running before running this script* :
 #### &nbsp; &nbsp; &nbsp; *npm run test-e2e*
+#### 4- To test for the internal server error scenario, I only ran the frontend server. An Alert appears as soon as the page loads.
 
 ---
 
