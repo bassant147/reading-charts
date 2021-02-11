@@ -9,11 +9,16 @@ const VISIBLE_CHARTS = 'VISIBLE_CHARTS';
 
 export const fetchData =  () => {  
   return async (dispatch) => {
-    const request = await axios.get('http://localhost:4000/data')
-    dispatch({
-      type: FETCH_DATA,
-      payload: request.data
-    });
+    try {
+      const request = await axios.get('http://localhost:4000/data')
+      dispatch({
+        type: FETCH_DATA,
+        payload: request.data
+      });
+    } catch(e) {
+      alert('Something wrong happened, please try again.')
+    }
+    
   }
 }
 
