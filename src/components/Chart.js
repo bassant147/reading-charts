@@ -64,7 +64,7 @@ class Chart extends Component {
       console.log('chart renderCharts')
       
       return this.state.charts.map((chartData, i) => {
-        return (<div key={i} className="chart">
+        return (<div key={i} className={`chart chart--${i}`}>
             <Bar 
               data={chartData}
               width={80}

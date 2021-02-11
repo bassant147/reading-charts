@@ -11,7 +11,7 @@ class Menu extends React.Component {
 
   renderTitles = () => {
       return this.props.chartTitles.map((title, idx) => 
-      <li className="menuItem" key={idx} onClick={() => this.selectChart(idx)}>
+      <li className={`menuItem menuItem--${idx}`} key={idx} onClick={() => this.selectChart(idx)}>
         {title}
       </li>)
   }
