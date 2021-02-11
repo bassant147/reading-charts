@@ -2,6 +2,7 @@ import { combineReducers } from "redux";
 
 const FETCH_DATA = 'FETCH_DATA';
 const TOGGLE_MENU = 'TOGGLE_MENU';
+const IS_CHART_SELECTED = 'IS_CHART_SELECTED';
 const SET_TITLES = 'SET_TITLES';
 const CHART_ID = 'CHART_ID';
 const VISIBLE_CHARTS = 'VISIBLE_CHARTS';
@@ -19,10 +20,12 @@ const dataReducer = (state = {}, action) => {
   }
 }
 
-const displayReducer = (state = {menuVisible: false}, action) => {
+const displayReducer = (state = {menuVisible: false, isChartSelected: false}, action) => {
   switch(action.type) {
     case TOGGLE_MENU:
       return {...state, menuVisible: action.payload};
+    case IS_CHART_SELECTED:
+      return {...state, isChartSelected: action.payload}
     default:
       return state;
   }

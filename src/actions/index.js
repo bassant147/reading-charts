@@ -2,6 +2,7 @@ import axios from 'axios';
 
 const FETCH_DATA = 'FETCH_DATA';
 const TOGGLE_MENU = 'TOGGLE_MENU';
+const IS_CHART_SELECTED = 'IS_CHART_SELECTED';
 const SET_TITLES = 'SET_TITLES';
 const CHART_ID = 'CHART_ID';
 const VISIBLE_CHARTS = 'VISIBLE_CHARTS';
@@ -20,6 +21,13 @@ export const toggleMenu = (visible) => {
   return {
     type: TOGGLE_MENU,
     payload: visible
+  }
+}
+
+export const setChartSelected = (selected) => {
+  return {
+    type: IS_CHART_SELECTED,
+    payload: selected
   }
 }
 

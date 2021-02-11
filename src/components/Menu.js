@@ -1,16 +1,15 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import {setChartId, toggleMenu} from '../actions';
+import {setChartId, toggleMenu, setChartSelected} from '../actions';
 
 class Menu extends React.Component {
   selectChart(id) {
-    console.log(id);
     this.props.setChartId(id);
+    this.props.setChartSelected(true);
     this.props.toggleMenu(false);
   }
 
   renderTitles = () => {
-      console.log(this.props.chartTitles);
       return this.props.chartTitles.map((title, idx) => 
       <li className="menuItem" key={idx} onClick={() => this.selectChart(idx)}>
         {title}
@@ -33,4 +32,4 @@ const mapStateToProps = state => {
   }
 }
 
-export default connect(mapStateToProps, {setChartId, toggleMenu})(Menu);
+export default connect(mapStateToProps, {setChartId, toggleMenu, setChartSelected})(Menu);
