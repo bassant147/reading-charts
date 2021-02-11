@@ -13,9 +13,9 @@
 ### Testing - *Testcafe was used*
 
 #### There are 4 testcases;
-#### 1- A test for checking whether there is an Add Chart button.
-#### 2- Three tests for checking each selection on the menu; to make sure that the selected chart is the same one that's being displayed to the user.
-#### 3- To test for the internal server error scenario, I only ran the frontend server. An Alert appears as soon as the page loads.
+*  A test for checking whether there is an Add Chart button.
+* Three tests for checking each selection on the menu; to make sure that the selected chart is the same one that's being displayed to the user.
+* To test for the internal server error scenario, run the frontend server without running the backend server. An Alert appears as soon as the page loads.
 ---
 
 ### Please note the following:
